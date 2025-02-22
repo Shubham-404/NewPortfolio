@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  height: 100%;
+  width: 100%;
+  background-color: rgb(20,20,20);
+  color: whitesmoke;
+
+}
+a{
+  color:aqua;
+}
+a:hover{
+  color:rgb(127, 255, 255);
+}

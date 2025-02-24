@@ -9,7 +9,7 @@ const App = () => {
 
   return (
     // Mark this div as the scroll container and attach the ref
-    <div className="!p-5 !m-5l">
+    <div className="!p-5 !m-5">
       <NavBar />
       <Intro />
       <Intro />

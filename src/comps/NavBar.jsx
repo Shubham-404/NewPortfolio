@@ -3,19 +3,13 @@ import './styles/Nav.css'
 import Li from './Li'
 
 const NavBar = () => {
-  const [None, setNone] = useState("none")
-  const [Block, setBlock] = useState("block")
-
-  const ham = document.querySelector("#ham");
-  const cross = document.querySelector("#cross");
+  const [Visible, setVisible] = useState(true)
 
   const navOpen = () => {
-    ham.style.display = "none"
-    cross.style.display = "block"
+    setVisible((prev)=>!prev);
     console.log("navopen")
-  
   }
-  
+
   const navClose = () => {
     cross.style.display = "none"
     ham.style.display = "block"

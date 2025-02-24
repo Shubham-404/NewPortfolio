@@ -1,0 +1,18 @@
+.name {
+    animation: bgText 7s infinite alternate;
+    background-image: linear-gradient(to right, rgb(252, 66, 252), rgb(253, 67, 95), rgb(186, 90, 255), rgb(0, 194, 162), rgb(252, 66, 252));
+}
+
+.name:hover {
+    animation: bgText 1s infinite alternate;
+}
+
+@keyframes bgText {
+    0% {
+        background-position: 0px;
+    }
+
+    100% {
+        background-position: 100rem;
+    }
+}

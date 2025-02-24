@@ -1,20 +1,83 @@
 @import "tailwindcss";
 
-*{
+.font-code {
+  font-family: "Source Code Pro", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.font-hawk {
+  font-family: "Fahkwang", serif;
+  font-style: normal;
+}
+
+.font-exo {
+  font-family: "Exo 2", serif;
+  font-style: normal;
+}
+
+
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  transition: .3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
-body{
+
+@property --col {
+  syntax: "<color>";
+  initial-value: rgb(30, 3, 43);
+  inherits: false;
+}
+
+html,
+body {
   height: 100%;
   width: 100%;
-  background-color: rgb(20,20,20);
-  color: whitesmoke;
+}
 
+body {
+  height: 100%;
+  width: 100%;
+  color: whitesmoke;
+  background: linear-gradient(to left, var(--col), rgb(18, 10, 20), rgb(11, 8, 12));
+  background-attachment: fixed;
+  transition: 1s ease;
+  animation: bg 2s ease-in-out infinite alternate;
 }
-a{
-  color:aqua;
+
+a {
+  color: rgb(255, 249, 194);
 }
-a:hover{
-  color:rgb(127, 255, 255);
+
+a:hover {
+  color: white;
+}
+
+@keyframes bg {
+  0% {
+    --col: rgb(31, 9, 34);
+  }
+
+  100% {
+    --col: rgb(36, 0, 59);
+  }
+}
+
+/* Custom Scrollbar */
+.scrollbar {
+  position: fixed;
+  right: 10px;
+  top: 0;
+  width: 5px;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.scrollbar-thumb {
+  width: 100%;
+  height: 0;
+  background: #888;
+  border-radius: 5px;
 }

@@ -30,6 +30,10 @@
   inherits: false;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 html,
 body {
   height: 100%;
@@ -56,11 +60,11 @@ a:hover {
 
 @keyframes bg {
   0% {
-    --col: rgb(31, 9, 34);
+    --col: rgb(46, 6, 51);
   }
 
   100% {
-    --col: rgb(36, 0, 59);
+    --col: rgb(51, 0, 83);
   }
 }
 
